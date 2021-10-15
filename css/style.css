@@ -1,0 +1,903 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    margin: 0;
+}
+
+/* header */
+    /* left */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+.header .left{
+    height: 100%;
+    width: 755px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .left a img{
+    height: 30px;
+    margin: 20px;
+}
+
+.header .left a{
+    height: fit-content;
+    width: 30px;
+    margin: 20px;
+}
+
+    /* mid */
+.header .mid{
+    background-image: url("../assets/logo/logoDelLuna.png");
+    height: 100%;
+    width: 400px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    /* right */
+.header .right{
+    height: 100%;
+    width: 755px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .right .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header .right .icon a img{
+    height: 30px;
+}
+
+.header .right .icon a{
+    height: fit-content;
+    width: 30px;
+    margin: 20px;
+}
+/* end header */
+
+
+/* navbar */
+.navbar{
+    border-bottom-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    background: none;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    font-family: "Bebas Neue";
+    color: black;
+}
+  
+.dropdown {
+    margin: 0px 10px 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown img{
+    height: 20px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #e1e1e1;}
+/* end navbar */
+
+
+/* content */
+    /* content home */
+.content{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+
+    /* Slider */
+.slider-box{
+    width: 100%;
+    max-width: 1920px;
+    height: 800px;
+    /* background-color: #717171; */
+}
+
+.slider{
+    /* width: 1520px; */
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.slide-container{
+    height: 100%;
+    width: 400%;
+    display: flex;
+    position: relative;
+}
+
+.slide{
+    width: 100%;
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-click{
+    height: 750px;
+    width: 100%;
+    max-width: 1920px;
+}
+
+#slide1 {
+    background-image: url("../assets/Image/slider/itzy.png");    
+}
+
+#slide2 {
+    background-image: url("../assets/Image/slider/2.png");
+}
+
+#slide3 {
+    background-image: url("../assets/Image/slider/3.png");
+}
+
+#slide4 {
+    background-image: url("../assets/Image/slider/4.png");
+}
+
+    /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+    /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+    /* The dots/bullets/indicators */
+.to-center{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+    /* end slider  */
+
+    /* kpop icon */
+.kpop-icon-content {
+    /* background-color: #717171; */
+    width: 100%;
+    max-width: 1920px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-center{
+    max-width: 1063px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: azure; */
+}
+
+.icon-center .top img{
+    width: 130px;
+    margin: 30px;
+}
+
+.icon-center .bottom img{
+    width: 130px;
+    margin: 30px;
+}
+
+.icon-center .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.icon-center .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+    /* end kpop icon  */
+
+    /* new release content  */
+.content-container {
+    height: fit-content;
+    max-width: 1920px;
+}
+    /* title  */
+.title-container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title{
+    /* background-color: aquamarine; */
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    padding: 7px 20px 10px;
+    border-top-style: solid;
+    border-width: 3px;
+    height: fit-content;
+    width: fit-content;
+}
+
+    /* new release album card */
+.new-release-content{
+    /* background-color: antiquewhite; */
+    height: fit-content;
+    width: inherit;
+}
+
+.content-top{ /* new release & best seller */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-bottom{ /* new release & best seller */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item{
+    background-color: rgba(225,225,225, 0.8);
+    height: 350px;
+    width: 250px;
+    margin: 20px 20px 20px 20px;
+    /* border-bottom-left-radius:50%;
+    border-bottom-right-radius:50% */
+    /* border-radius: 20px; */
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    width: 95%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 20px; */
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+
+.card-info{
+    display: flex;
+    height: 25%;
+    /* background-color: aqua; */
+}
+
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    /* background-color: blueviolet; */
+}
+
+.card-txt-item{
+    padding: 5px;
+    padding-left: 15px;
+    /* background-color: darkorange; */
+}
+
+.card-cart-container{
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.card-cart-wrapper{
+    /* background-color: aquamarine; */
+    width: 50%;
+    height: 50%;
+}
+
+.card-cart-icon{
+    width: 100%;
+    height: 100%;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/icon/shopping-bag.png");
+}
+
+    /* new release add image */
+#new-release1{background-image: url("../assets/Image/album/twice/More\ &\ more.jpg");}
+#new-release2{background-image: url("../assets/Image/album/blackpink/square\ up\ black\ version.jpg");}
+#new-release3{background-image: url("../assets/Image/album/itzy/itz\ icy.jpg");}
+#new-release4{background-image: url("../assets/Image/album/got7/spinning\ top.jpg");}
+#new-release5{background-image: url("../assets/Image/merchant/hoodie/bt21.jpeg");}
+#new-release6{background-image: url("../assets/Image/merchant/light-stick/got7-official-lightstick.jpg");}
+#new-release7{background-image: url("../assets/Image/merchant/photo-card/blackpink-5-pack-photocards.jpg");}
+#new-release8{background-image: url("../assets/Image/merchant/seasons-greetings/btob_2021_season_s_greetings.jpg");}
+
+    /* End new release content */
+
+    /* Best seller Content */
+.best-seller-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.best-seller-content{
+    height: fit-content;
+    width: inherit;
+}
+
+.best-seller-card{
+    /* background-color: #717171; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-star-wrapper{
+    /* background-color: brown; */
+    width: 70%;
+    height: 50%;
+}
+
+.card-star-icon{
+    width: 100%;
+    height: 100%;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    /* Best seller add img & icon */
+#best-seller-album-img-1{background-image: url("../assets/Image/album/snsd/snsd_holiday.jpg");}
+#best-seller-album-img-2{background-image: url("../assets/Image/album/blackpink/square\ up\ black\ version.jpg");}
+#best-seller-album-img-3{background-image: url("../assets/Image/album/itzy/itz\ icy.jpg");}
+#best-seller-album-img-4{background-image: url("../assets/Image/album/twice/More\ &\ more.jpg");}
+#star1{background-image: url("../assets/icon/Star\ 1.png");}
+#star2{background-image: url("../assets/icon/Star\ 2.png");}
+#star3{background-image: url("../assets/icon/Star\ 3.png");}
+#star4{background-image: url("../assets/icon/Star\ 4.png");}
+#best-seller-merchant-img-1{background-image: url("../assets/Image/merchant/hoodie/bt21.jpeg");}
+#best-seller-merchant-img-2{background-image: url("../assets/Image/merchant/light-stick/got7-official-lightstick.jpg");}
+#best-seller-merchant-img-3{background-image: url("../assets/Image/merchant/photo-card/blackpink-5-pack-photocards.jpg");}
+#best-seller-merchant-img-4{background-image: url("../assets/Image/merchant/seasons-greetings/btob_2021_season_s_greetings.jpg");}
+
+
+.best-seller-button-container{
+    /* background-color: cyan; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-seller-button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    font-family: "Bebas Neue";
+    color: black;
+    font-size: 25px;
+}
+
+    /* End best seller content */
+.margin-bott{
+    margin-bottom: 60px;
+}
+    /* end content home */
+
+    /* content register */
+.contentRegister{
+    height: 900px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(241,241,241);
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.registerForm .titleForm{
+    font-family: "bebas neue";
+    margin-top: 20px;
+}
+
+.registerForm form .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.registerForm .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2-20px);
+}
+
+.registerForm .input-boxs select{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.registerForm .input-box input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 16px;
+    font-size: 14px;
+}
+
+.registerForm .input-box .detail{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+    /* end content register */
+
+    /* catalog album */
+.contentCatalog{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.catalogAlbum{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.titleAlbum{
+    font-family: "bebas neue";
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box-album{
+    float: left;
+    margin: 15px;
+    padding: 7px;
+    text-align: left;
+    background-color: rgba(225,225,225, 0.8) ;
+}
+div.box-album img{
+    width: 250px;
+    height:250px;
+}
+
+div.box-album:hover{
+    background-color :rgba(225,225,225, 0.4);
+}
+
+#shop{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 3px;
+}
+    /* end catalog album */
+
+    /*catalog merchandises*/
+.titleMerchandises{
+    font-family: "bebas neue";
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box-merchandises{
+    float: left;
+    margin: 15px;
+    padding: 7px;
+    text-align: left;
+    background-color: rgba(225,225,225, 0.8) ;
+}
+
+div.box-merchandises img{
+    width: 250px;
+    height:250px;
+}
+
+div.box-merchandises:hover{
+    background-color :rgba(225,225,225, 0.4);
+}
+    /*end catalog merchandises*/
+
+    /*testimonial*/
+.contentTestimonial{
+    padding: 40px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.contentTestimonial .titleTestimonial{
+    font-family: "Bebas Neue";
+}
+
+.contentTestimonial .borderTestimonial{
+    background: black;
+    width: 150px;
+    height: 1px;
+    margin: 26px auto;
+}
+
+.contentTestimonial .rowTestimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contentTestimonial .column{
+    flex: 30%;
+    max-width: 30%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.contentTestimonial .profileTestimonial{
+    background-color:antiquewhite;
+    padding: 50px;
+}
+
+.contentTestimonial .profileTestimonial img{
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contentTestimonial .nameTestimonial{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.contentTestimonial .starTestimonial{
+    margin-bottom: 20px;
+}
+
+.contentTestimonial .starTestimonial img{
+    width: 24px;
+    height: 24px;
+}
+    /*end testimonial*/
+/* end content */
+
+
+/* footer */
+.footer{
+    height: 370px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.footer1{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+.about-us{
+    text-align: center;
+    width: 400px;
+    font-size: large;
+}
+
+.about-us h1{
+    font-family: "Bebas Neue";
+    color: black;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    height: 70px;
+    font-size: large;
+}
+/* end footer */
+
+/* responsive */
+
+@media (max-width: 600px){
+
+    .card-item{
+        display: inline-block;
+        height: 300px;
+        width: 200px;
+        text-align: left;
+        border-radius: 20px;
+    }
+
+    .card-img{
+        border-radius: 20px;
+    }
+
+    .content-top{ /* new release & best seller */
+        text-align: center;
+        display: block;
+    }
+    
+    .content-bottom{ /* new release & best seller */
+        text-align: center;
+        display: block;
+    }
+
+    .best-seller-card{
+        text-align: center;
+        display: block;
+    }
+
+    .icon-center{
+        width: 90%;
+    }
+    
+    .icon-center .top{
+        display: inline-block;
+    }
+    
+    .icon-center .bottom{
+        display: inline-block;
+    }
+
+    .slider-box{
+        height: 400px;
+    }
+
+    .slider{
+        height: 350px;
+    }
+
+    .slide-click{
+        height: 350px;
+    }
+
+    
+    .header .left{
+        width: 35%;
+    }
+
+    .header .left a img{
+        height: 20px;
+        margin: 10px;
+    }
+
+    .header .left a{
+        margin: 10px;
+    }
+
+        /* mid */
+    .header .mid{
+        width: 30%;
+    }
+
+        /* right */
+    .header .right{
+        width: 35%;
+    }
+
+    .header .right .icon a img{
+        height: 20px;
+    }
+
+    .header .right .icon a{
+        margin: 10px;
+    }
+
+    /* footer */
+    .footer{
+        height: 270px;
+        padding: 20px;
+    }
+
+    .footer1{
+        height: 200px;
+    }
+
+    .about-us{
+        font-size: small;
+    }
+
+    .copyright{
+        font-size: small;
+    }
+
+
+    /*testimonial*/
+    .contentTestimonial .rowTestimonial{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentTestimonial .column{
+        width: fit-content;
+        max-width: none;
+    }
+
+    .contentTestimonial .profileTestimonial{
+        width: 300px;
+        border-radius: 20px;
+    }
+    /*end testimonial*/
+
+
+    
+    /* catalog album */
+    .box-album{
+        border-radius: 20px;
+    }
+
+    div.box-album img{
+        width: 200px;
+        height:230px;
+        border-radius: 20px;
+    }
+    /* end catalog album */
+
+    /*catalog merchandises*/
+    .box-merchandises{
+        border-radius: 20px;
+    }
+
+    div.box-merchandises img{
+        width: 200px;
+        height:230px;
+        border-radius: 20px;
+    }
+    /*end catalog merchandises*/
+}

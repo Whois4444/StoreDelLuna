@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+
+    <!-- 
+        TODO:
+        - Responsive
+     -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="left">
+            <a href="#"><img src="../assets/icon/twitter.png" alt=""></a>
+            <a href="#"><img src="../assets/icon/facebook.png" alt=""></a>
+            <a href="#"><img src="../assets/icon/instagram.png" alt=""></a>
+        </div>
+        <div class="mid">
+
+        </div>
+        <div class="right">
+            <div class="icon">
+                <a href="#"><img src="../assets/icon/shopping-bag.png" alt=""></a>
+                <a href="#"><img src="../assets/icon/favorite.png" alt=""></a>
+                <a href="#"><img src="../assets/icon/search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                MENU
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="#">Login</a>
+              <a href="register.html">Register</a>
+              <a href="testimonial.html">Testimoni</a>
+            </div>
+        </div>
+        <!-- dropdown Album -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                ALBUM
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="albumcatalog_boy.html">Boys Group</a>
+              <a href="albumcatalog_girl.html">Girls Group</a>
+              <a href="albumcatalog_bestseller.html">BEST SELLER!</a>
+            </div>
+        </div>
+        <!-- dropdown Merchantdise -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                MERCHANDISE
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="merchandisescatalog_boy.html">Boys Group</a>
+              <a href="merchandisescatalog__girl.html">Girls Group</a>
+              <a href="merchandisescatalog_bestseller.html">BEST SELLER!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Slider -->
+        <div class="slider-box">
+            <div class="slider">
+                <div class="frame">
+                    <div class="slide-container">
+                        <a class="slide-click" href="#">
+                            <div class="slide" id="slide1"></div>
+                        </a>
+    
+                        <a class="slide-click" href="#">
+                            <div class="slide" id="slide2"></div>
+                        </a>
+                        
+                        <a class="slide-click" href="#">
+                            <div class="slide" id="slide3"></div>
+                        </a>
+    
+                        <a class="slide-click" href="#">
+                            <div class="slide" id="slide4"></div>
+                        </a>
+                    </div>
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+            </div>
+            
+            <div class="to-center" style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <!-- Kpop Icon Logo -->
+        <div class="kpop-icon-content">
+                <div class="icon-center">
+                    <div class="top">
+                        <img src="../assets/Image/kpop/twice.png" alt="">
+                        <img src="../assets/Image/kpop/red velvet.png" alt="">
+                        <img src="../assets/Image/kpop/blackpink.png" alt="">
+                        <img src="../assets/Image/kpop/itzy.png" style="background-color: black;" alt="">
+                        <img src="../assets/Image/kpop/snsd.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <img src="../assets/Image/kpop/btob.jpg" alt="">
+                        <img src="../assets/Image/kpop/nct.png" alt="">
+                        <img src="../assets/Image/kpop/got7.png" alt="">
+                        <img src="../assets/Image/kpop/monsta x.jpg" alt="">
+                        <img src="../assets/Image/kpop/suju.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+
+        <!-- New Release Content -->
+        <div class="content-container margin-bott">
+            <!-- title New Release -->
+            <div class="title-container">
+                <div class="title">
+                    <h1># NEW RELEASE</h1>
+                </div>
+            </div>
+
+            <!-- content New Release -->
+            <div class="new-release-content">
+                <div class="content-top">
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release1"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        More & more<br>
+                                        Twice <br>
+                                        Rp 419.999
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release2"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Square Up<br>
+                                        Black Pink <br>
+                                        Rp 399.999
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release3"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        It'z Icy<br>
+                                        Itzy<br>
+                                        Rp 439.999
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release4"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Spinning Top<br>
+                                        GOT7<br>
+                                        Rp 549.999
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-bottom">
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release5"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Hoodie BT21<br>
+                                        BTS<br>
+                                        Rp 525.000
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release6"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Lightstick Official<br>
+                                        GOT7<br>
+                                        Rp 999.000
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release7"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Photo Card Blackpink<br>
+                                        Blackpink<br>
+                                        Rp 215.000
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-img-wrapper">
+                            <div class="card-img" id="new-release8"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-txt">
+                                <a href="#">
+                                    <p class="card-txt-item">
+                                        Season Greeting<br>
+                                        BTOB<br>
+                                        Rp 510.000
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="card-cart-container">
+                                <div class="card-cart-wrapper">
+                                    <a class="card-cart" href="#">
+                                        <div class="card-cart-icon"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Best Seller Content -->
+        <div class="content-container margin-bott">
+             <!-- title Best Seller -->
+            <div class="title-container">
+                <div class="title">
+                    <h1># BEST SELLER</h1>
+                </div>
+            </div>
+
+            <!-- content Best Seller -->
+            <div class="best-seller-content">
+                <div class="content-top best-seller-column">
+                    <div class="best-seller-card">
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-album-img-1"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Holiday Night<br>
+                                            SNSD<br>
+                                            Rp 439.999
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star1"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-album-img-2"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Square Up<br>
+                                            Black Pink<br>
+                                            Rp 399.999
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star2"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-album-img-3"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            It'z Icy<br>
+                                            Itzy<br>
+                                            Rp 439.999
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star3"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-album-img-4"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            More & More<br>
+                                            Twice<br>
+                                            Rp 419.999
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star4"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-seller-button-container">
+                        <a href="#">
+                            <div class="best-seller-button">
+                                <p>VIEW ALL ALBUM</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-bottom best-seller-column">
+                    <div class="best-seller-card">
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-merchant-img-1"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Hoodie BT21<br>
+                                            BTS<br>
+                                            Rp 525.000
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star1"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-merchant-img-2"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Lightstick Official<br>
+                                            GOT7<br>
+                                            Rp 999.000
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star2"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-merchant-img-3"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Photo Card Blackpink<br>
+                                            Blackpink<br>
+                                            Rp 215.000
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star3"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-img-wrapper">
+                                <div class="card-img" id="best-seller-merchant-img-4"></div>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-txt">
+                                    <a href="#">
+                                        <p class="card-txt-item">
+                                            Season Greeting<br>
+                                            BTOB<br>
+                                            Rp 510.000
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="card-cart-container">
+                                    <div class="card-cart-wrapper">
+                                        <a class="card-cart" href="#">
+                                            <div class="card-cart-icon"></div>
+                                        </a>
+                                    </div>
+                                    <div class="card-star-wrapper">
+                                        <a href="#">
+                                            <div class="card-star-icon" id="star4"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-seller-button-container">
+                        <a href="#">
+                            <div class="best-seller-button">
+                                <p>VIEW ALL MERCHANT</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <!-- top Footer -->
+        <div class="footer1">
+            <div class="about-us">
+                <h1>ABOUT US</h1>
+                <p>Store Del Luna is a famous 1st hand K-Pop merchandise supplier established in June 2013. We provide original K-Pop albums and merchandises from many artists. </p>
+            </div>
+        </div>
+        <!-- bottom Footer -->
+        <div class="copyright">
+            <p>Copyright &copy; 2021 STORE DE LUNA - Album and Merchant Store</p>
+        </div>
+    </div>
+</body>
+</html>

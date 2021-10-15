@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- 
+        TODO: 
+            - link tiap icon (twitter, instagram, facebook)
+            - link cart, wishlist, search
+            - bikin side bar
+        -->
+        <div class="left">
+            <a href="#"><img src="../assets/icon/twitter.png" alt=""></a>
+            <a href="#"><img src="../assets/icon/facebook.png" alt=""></a>
+            <a href="#"><img src="../assets/icon/instagram.png" alt=""></a>
+        </div>
+        <div class="mid">
+
+        </div>
+        <div class="right">
+            <div class="icon">
+                <a href="#"><img src="../assets/icon/shopping-bag.png" alt=""></a>
+                <a href="#"><img src="../assets/icon/favorite.png" alt=""></a>
+                <a href="#"><img src="../assets/icon/search.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+       <!-- dropdown Menu -->
+       <div class="dropdown">
+            <button class="dropbtn">
+                MENU
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="#">Login</a>
+                <a href="register.html">Register</a>
+                <a href="testimonial.html">Testimoni</a>
+            </div>
+        </div>
+        <!-- dropdown Album -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                ALBUM
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="albumcatalog_boy.html">Boys Group</a>
+              <a href="albumcatalog_girl.html">Girls Group</a>
+              <a href="albumcatalog_bestseller.html">BEST SELLER!</a>
+            </div>
+        </div>
+        <!-- dropdown Merchantdise -->
+        <div class="dropdown">
+            <button class="dropbtn">
+                MERCHANDISE
+                <img src="../assets/icon/dropdown arrow.png" alt="">
+            </button>
+            <div class="dropdown-content">
+              <a href="merchandisescatalog_boy.html">Boys Group</a>
+              <a href="merchandisescatalog__girl.html">Girls Group</a>
+              <a href="merchandisescatalog_bestseller.html">BEST SELLER!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentRegister">
+        <div class="registerForm">
+            <div class="titleForm">
+                <h1>Register Form</h1>
+            </div>
+            <form name ="regisForm" onsubmit="return validateForm()" method="post">
+                    <div class="input-box">
+                        <span class="detail">Username</span>
+                        <input type="label" name="name" placeholder="Username">
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">Password</span>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                   <div class="input-box">
+                       <span class="detail">Confirm Password</span>
+                       <input type="password" name="confirmPassword" placeholder="Confirm Password">
+                   </div>
+                   <div class="input-box">
+                       <span class="detail">Full Name</span>
+                       <input type="label" name="fullName" placeholder="Full Name">
+                   </div>  
+                   <div class="input-boxs">
+                        <span class="detail">Gender</span>
+                        <select name="gender">
+                            <option value="Select">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                   </div>                 
+                   <div class="input-box">
+                       <span class="detail">Email</span>
+                       <input type="email" name="email" placeholder="Email Address">
+                   </div>            
+                   <div class="input-box">
+                       <span class="detail">Age</span>
+                       <input type="number" name="age" placeholder="Age">
+                   </div>
+                   <div class="input-boxs">
+                        <input type="checkbox" name="terms">
+                        <span class="detail"> I agree with terms and conditions</span>
+                   </div>
+                   <div class="input-box">
+                        <input type="submit" value="Submit">
+                   </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <div class="about-us">
+                <h1>ABOUT US</h1>
+                <p>Store Del Luna is a famous 1st hand K-Pop merchandise supplier established in June 2013. We provide original K-Pop albums and merchandises from many artists. </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2021 STORE DE LUNA - Album and Merchant Store</p>
+        </div>
+    </div>
+</body>
+</html>
